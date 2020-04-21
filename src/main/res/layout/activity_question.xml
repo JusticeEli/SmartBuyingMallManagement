@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background1"
+    android:padding="20dp"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Question"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--BACKENDLESS_________________________________                     -->
+    <LinearLayout
+        android:id="@+id/loadingLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ProgressBar
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/loadTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="loading...." />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quality of Service"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/qualityOfTheServiceRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/qualityOfTheServiceExcellent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="excellent" />
+
+                        <RadioButton
+                            android:id="@+id/qualityOfTheServiceGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="good" />
+
+                        <RadioButton
+                            android:id="@+id/qualityOfTheServiceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="medium" />
+
+                        <RadioButton
+                            android:id="@+id/qualityOfTheServiceBad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bad" />
+
+                        <RadioButton
+                            android:id="@+id/qualityOfTheServiceUnacceptable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unacceptable" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Politeness-the kindness and politeness of the retailer to the costumers"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/politenessRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/politenessExcellent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="excellent" />
+
+                        <RadioButton
+                            android:id="@+id/politenessGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="good" />
+
+                        <RadioButton
+                            android:id="@+id/politenessMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="medium" />
+
+                        <RadioButton
+                            android:id="@+id/politenessBad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bad" />
+
+                        <RadioButton
+                            android:id="@+id/politenessUnacceptable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unacceptable" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Value for Money refers to the quantity and quality of the purchased goods that will be exchanged for one monetary unit"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/valueForMoneyRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/valueForMoneyExcellent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="excellent" />
+
+                        <RadioButton
+                            android:id="@+id/valueForMoneyGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="good" />
+
+                        <RadioButton
+                            android:id="@+id/valueForMoneyMedium"
+                            android:layout_width="wrap_content"
+                            android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:text="medium" />
+
+                        <RadioButton
+                            android:id="@+id/valueForMoneyBad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bad" />
+
+                        <RadioButton
+                            android:id="@+id/valueForMoneyUnacceptable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unacceptable" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount Policy assesses the overall strategy and possible deals"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/discountPolicyRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/discountPolicyGenerous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="generous" />
+
+                        <RadioButton
+                            android:id="@+id/discountPolicyGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="good" />
+
+                        <RadioButton
+                            android:id="@+id/discountPolicyNormal"
+                            android:layout_width="wrap_content"
+                            android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:text="normal" />
+
+                        <RadioButton
+                            android:id="@+id/discountPolicyLimited"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="limited" />
+
+                        <RadioButton
+                            android:id="@+id/discountPolicyNone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="none" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/background1"
+                    android:text="Submit"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921191175181",
+    "firebase_url": "https://smartbuyingmallmanagement.firebaseio.com",
+    "project_id": "smartbuyingmallmanagement",
+    "storage_bucket": "smartbuyingmallmanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921191175181:android:d065004e32fc31f4013144",
+        "android_client_info": {
+          "package_name": "com.justice.smartbuyingmallmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921191175181-24qc6gr3l9tdg94j68400f20a139fuu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justice.smartbuyingmallmanagement",
+            "certificate_hash": "a750750b75522391484378f5e5806f12824dc71e"
+          }
+        },
+        {
+          "client_id": "921191175181-kcnrs8fremvv2dkol1iac4ja8j06esf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpr4lcVDcb9o4IfDMElWYlDqFE0ex2jGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921191175181-kcnrs8fremvv2dkol1iac4ja8j06esf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

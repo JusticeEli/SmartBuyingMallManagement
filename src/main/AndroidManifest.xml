@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.justice.smartbuyingmallmanagement">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".data.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/smart_buying_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smart_buying_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".business.BusinessOwnerSetupActivity"></activity>
+        <activity android:name=".user.MyProfileActivity" />
+        <activity android:name=".admin.UserDetailsActivity" />
+        <activity android:name=".admin.AdminRegisterActivity" />
+        <activity android:name=".business.BusinessOwnerLoginActivity" />
+        <activity android:name=".user.UserRegisterActivity" />
+        <activity android:name=".view.ViewRatingActivity" />
+        <activity android:name=".MyRatingActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".MoreInfoActivity" />
+        <activity android:name=".search.SearchOfferActivity" />
+        <activity android:name=".user.UserFirstPageActivity" />
+        <activity android:name=".user.UserLoginActivity" />
+        <activity android:name=".update.UpdateContractStatusActivity" />
+        <activity android:name=".view.ViewDetailsActivity" />
+        <activity android:name=".admin.AdminLoginFirstPageActivity" />
+        <activity android:name=".admin.AdminLoginActivity" />
+        <activity android:name=".update.UpdateActivity" />
+        <activity android:name=".view.ViewBusinessDetailsActivity" />
+        <activity android:name=".business.AddBusinessActivity" />
+        <activity android:name=".business.BusinessOwnerFirstPageActivity" />
+        <activity android:name=".business.BusinessOwnerRegisterActivity" />
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAdwtMP-Cr0ORiBi7UZi07q85E-U7XZbJ4" />
+    </application>
+
+</manifest>
